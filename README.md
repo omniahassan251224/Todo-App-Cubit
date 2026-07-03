@@ -1,17 +1,35 @@
-# my_first_project
+# To Do App 
 
-A new Flutter project.
+## Description
+A simple To Do application built using Flutter and Cubit State Management.
 
-## Getting Started
+## Features
+- Add Task
+- Delete Task
+- Display Tasks
+- Mark Task as Completed
+- Clear All Tasks
+- Show Total Tasks
+- Task Priority
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+## Architecture
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+lib/
+├── mainT.dart
+├── homeT.dart
+├── Task.dart
+├── Task_cubit.dart
+└── states.dart
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Application Flow
+
+1. User add task.
+2. TaskCubit adds the task.
+3. Cubit emits a new state.
+4. BlocBuilder rebuilds the UI automatically.
+5. User can complete or delete tasks.
+
+## State Management
+
+bloc
